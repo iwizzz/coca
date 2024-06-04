@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.min.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <img src="../dist/images/Logo.svg" alt="">
+                <nav class="header__nav">
+                    <ul class="header__link-list">
+                        <li class="header__link-list-item"><a href="../index.html">Home</a></li>
+                        <li class="header__link-list-item"><a href="./about.html">About</a></li>
+                        <li class="header__link-list-item"><a href="./blog.html">Blog</a></li>
+                        <li class="header__link-list-item"><a href="">Pricing</a></li>
+                        <li class="header__link-list-item"><a href="" class="header__contact-us-link">Contact Us</a></li>
+                    </ul>
+                    
+                    
+                </nav>
+                <img src="../dist/images/burger.svg " alt="" class="header__burger-button">
+            </div>
+        </header>
+        <main class="detail-blog__main">
+            <div class="detail-blog__main__container">
+                <article class="detail-blog__article">
+                    <h1 class="detail-blog__main-title">
+                        How we perform long-running tasks using AWS services
+                    </h1>
+                    <div class="detail-blog__article__body">
+                        <div class="detail-blog__article__body__first-block">
+                            <div class="detail-blog__article__body__news-info">
+                                <div class="detail-blog__article__body__news-info__author-block">
+                                    <div class="detail-blog__article__body__news-info__author-block__img-wrapper">
+                                        <picture>
+                                            <source type="image/avif" srcset="../dist/images/avatar.avif">
+                                            <source type="image/webp" srcset="../dist/images/avatar.webp">
+                                            <img src="../dist/images/avatar.jpg" alt="">
+                                        </picture>
+                                        
+                                    </div>
+                                    <div class="detail-blog__article__body__news-info__author-block__info-wrapper">
+                                        <p>Renee Wells</p>
+                                        <p>Product Designer, Quotient</p>
+                                    </div>
+                                </div>
+                                <div class="detail-blog__article__body__news-info__time">
+                                    <p>10 min read</p>
+                                    <p>November 10, 2023</p>
+                                </div>
+                            </div>
+                            <div class="detail-blog__article__body__news-picture">
+                                <picture>
+                                   <source type='image/avif' srcset='../dist/images/news-pic.avif'>
+                                   <source type='image/webp' srcset='../dist/images/news-pic.webp'>
+                                   <img src='../dist/images/news-pic.png' alt=''>
+                                </picture>
+                            </div>
+                            <p class="detail-blog__article__body__first-block__text">
+                                Depending on the input, this can result in using a lot of processing power and time. The whole process would take approximately 5 seconds to return a result to the client. Keep in mind we’re talking about 1 item, a contact from a contact book. After a while, a new requirement is added. Solution must support companies that manage their contacts organized in files. We agreed to develop a web application that would support upload of dataset files, like .csv. The new web application should support third party integrations. Some of them are the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later notify the user about the result, when the process finishes. This information is the key that we need to leverage on when developing our solution. So here’s how we did it.
+                            </p>
+                        </div>
+                        <div class="detail-blog__article__body__second-block">
+                            <h3>Initial approach</h3>
+                            <p>Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This solution is prone to failure due to long request time. Also, because of some 3rd party services that aren’t optimized for large scale loads or they don’t have batch endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their end. The whole process was done in real-time. The request can take a lot of time hanging in there while the backend would do all the work and return the result to the client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the user has to wait a few minutes to see the results. They can’t use the app during the process, which makes for a bad user experience.</p>
+                        </div>
+                        <div class="detail-blog__article__body__third-block">
+                            <div class="detail-blog__article__body__third-block__img-wrapper">
+                                <picture>
+                                   <source type='image/avif' srcset='../dist/images/article-author.avif'>
+                                   <source type='image/webp' srcset='../dist/images/article-author.webp'>
+                                   <img src='../dist/images/article-author.jpg' alt=''>
+                                </picture>
+                            </div>
+                            <div class="detail-blog__article__body__third-block__info">
+                                <ul class="detail-blog__article__social-list">
+                                    <li class="detail-blog__article__social-list-item"><a href=""><img src="../dist/images/facebook-black-icon.svg" alt=""></a></li>
+                                    <li class="detail-blog__article__social-list-item"><a href=""><img src="../dist/images/twiter-black-icon.svg" alt=""></a></li>
+                                    <li class="detail-blog__article__social-list-item"><a href=""><img src="../dist/images/linkedin-black-icon.svg" alt=""></a></li>
+                                    <li class="detail-blog__article__social-list-item"><a href=""><img src="../dist/images/instagram-black-icon.svg" alt=""></a></li>
+                                    <li class="detail-blog__article__social-list-item"><p>Share this article</p></li>
+                                </ul>
+                                <p class="detail-blog__article__body__third-block__small-text">Written by</p>
+                                <h4 class="detail-blog__article__body__third-block__title">Renee Wells</h4>
+                                <p class="detail-blog__article__body__third-block__small-text">Product Designer, Quotient</p>
+                                <p class="detail-blog__article__body__third-block__text">Skilled in React Native, iOS and backend, Toni has a demonstrated knowledge of the information technology and services industry, with plenty of hands-on experience to back it up.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="footer footer-black">
+            <div class="footer__container">
+                <div class="footer__head-block">
+                    <div class="footer__head-block__body">
+                        <h2 class="footer__head__title">Think beyond the wave</h2>
+                        <p class="footer__head__text">Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help</p>
+                    </div>
+                    <a href="#" class="footer__head__button">Try for free</a>
+                </div>
+                <div class="footer__body-block">
+                    <div class="footer__body-block__logo-and-text">
+                        <a href="../index.html" class="footer__body-block-logo-wrapper"><img src="../dist/images/Logo.svg"></img></a>
+                        <p class="footer__body-block__text">We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs</p>
+                    </div>
+                    <ul class="footer__body-block__section-list">
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Company</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">About</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Pricing</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Jobs</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Product</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Sales Software</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Marketplace</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Terms & Conditions</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Discover</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">CRM Comparision</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Partner Program</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">What is CRM</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Resource</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Help Center</h5>
+                            <ul class="footer__body-block__section-list__links-list"> 
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Community</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Knowledge Base</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Academy</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__last-block">
+                    <div class="footer__lists-wrapper"> 
+                        <ul class="footer__last-block__social-list">
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="../dist/images/facebook-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="../dist/images/twiter-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="../dist/images/instagram-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="../dist/images/linkedin-icon.svg" alt=""></a></li>
+                        </ul>
+                        <ul class="footer__last-block__links-list">
+                            <li class="footer__last-block__links-list-item"><a href="#">Privacy Policy</a></li>
+                            <li class="footer__last-block__links-list-item"><a href="#">Terms & Conditions</a></li>
+                            <li class="footer__last-block__links-list-item"><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <p>© Copyright 2023,t All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        
+
+    <script type="module" src="../js/main.min.js"></script>
+
+</body>
+</html>

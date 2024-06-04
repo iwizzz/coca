@@ -1,0 +1,339 @@
+.footer {
+    padding: 112px 0 58px 0;
+}
+.footer-black {
+    background-color: $semi-black;
+}
+.footer-white {
+    
+
+    overflow: hidden;
+
+    
+
+     
+    .footer__container {
+        position: relative;
+        &::before {
+            content: url("../dist/images/bg-orange.svg");
+    
+            position: absolute;
+            top: -50%;
+            left: 5%;
+            z-index: -1;
+    
+            filter: blur(120px);
+        }
+    
+        &::after {
+            content: url("../dist/images/bg-green.svg");
+    
+            position: absolute;
+            top: 50%;
+            right: -10%;
+            z-index: -1;
+            transform: translateY(-50%);
+
+            filter: blur(30px);
+        }
+    }
+    .footer__head-block {
+    }
+    .footer__head-block__body {
+    }
+    .footer__head__title {
+        color: $semi-black;
+
+        
+
+    }
+    .footer__head__text {
+        color: $semi-black;
+        font-size: 24px;
+        font-weight: 600;
+
+        padding-left: 100px;
+
+        box-sizing: content-box;
+       
+        position: relative;
+        
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 20px;
+            left: 0;
+
+            background-color: $black;
+            width: 76px;
+            height: 1px;
+        }
+       
+    }
+    .footer__head__button {
+        color: $white;
+        background-color: $semi-black;
+    }
+    .footer__body-block {
+    }
+    .footer__body-block__logo-and-text {
+    }
+    .footer__body-block-logo-wrapper {
+        filter: none;
+    }
+    .footer__body-block__text {
+        color: $semi-black;
+
+    }
+    .footer__body-block__section-list {
+    }
+    .footer__body-block__section-list-item {
+        & h5 {
+            color: $semi-black;
+
+        }
+
+    }
+    .footer__body-block__section-list__links-list {
+        color: $semi-black;
+
+    }
+    .footer__body-block__section-list__links-list-item {
+        color: $semi-black;
+
+    }
+    
+    .footer__last-block {
+        border-color: $grey-border;
+
+        color: $grey-bright;
+
+        justify-content: center;
+    }
+    .footer__lists-wrapper {
+        display: none
+    }
+    .footer__last-block__social-list {
+    }
+    .footer__last-block__social-list-item {
+    }
+    .footer__last-block__links-list {
+    }
+    .footer__last-block__links-list-item {
+    }
+}
+.footer__container {
+    @include container;
+}
+.footer__head-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+
+    
+}
+.footer__head-block__body {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 24px;
+}
+.footer__head__title {
+    color: $white;
+}
+.footer__head__text {
+    color: $grey-bright;
+    font-weight: 500;
+
+    max-width: 543px;
+
+    display: block;
+    
+
+}
+.footer__head__button {
+    @include smallText;
+    color: $semi-black;
+    font-weight: 700;
+
+    background-color: $white;
+
+    padding: 16px 32px;
+
+    border-radius: 36px;
+
+    text-wrap: nowrap;
+
+}
+.footer__body-block {
+    margin-top: 134px;
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.footer__body-block__logo-and-text {
+}
+.footer__body-block-logo-wrapper {
+    filter: invert(93%) sepia(0%) saturate(28%) hue-rotate(113deg) brightness(106%) contrast(107%);
+}
+.footer__body-block__text {
+    @include smallText;
+
+    max-width: 292px;
+}
+.footer__body-block__section-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+
+    max-width: 764px;
+    width: 100%;
+
+    
+}
+.footer__body-block__section-list-item {
+    
+
+    & h5 {
+        color: $white;
+
+    }
+}
+.footer__body-block__section-list__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+   
+
+
+    margin-top: 24px;
+}
+.footer__body-block__section-list__links-list-item {
+    @include smallText;
+
+}
+.footer__last-block {
+    border-top: 1px solid #606060;
+
+    margin-top: 56px;
+
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: $white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.footer__lists-wrapper {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.footer__last-block__social-list {
+    display: flex;
+    gap: 20px;
+}
+.footer__last-block__social-list-item {
+      & a {
+        display: block;
+       
+
+        & img {
+            display: block;
+        }
+    }
+}
+.footer__last-block__links-list {
+    display: flex;
+    gap: 40px;
+}
+.footer__last-block__links-list-item {
+}
+
+@media (max-width: 768px) {
+    .footer__head-block  {
+        flex-direction: column;
+        
+
+        text-align: center;
+
+        & .footer__head-block__body {
+            align-items: center;
+        }
+    }
+
+    .footer__body-block {
+        gap: 60px;
+    }
+
+    .footer__body-block__section-list   {
+        flex-wrap: wrap;
+
+       
+
+        & > .footer__body-block__section-list-item {
+            display: flex;
+            flex-direction: column;
+
+            flex: 1 30%;
+
+           
+        }
+    }
+    
+    .footer__last-block {
+        flex-direction: column;
+        
+
+        & .footer__lists-wrapper  {
+            justify-content: space-around;
+        }
+    }
+
+    .footer-white {
+        .footer__head__text {
+            
+    
+            padding-left: 0;
+    
+            
+            &::before {
+                
+    
+                top: 110%;
+                left: 50%;
+    
+                transform: translateX(-50%)
+              
+            }
+           
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__body-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        & .footer__body-block__logo-and-text  {
+            
+        }
+    }
+
+    .footer__lists-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

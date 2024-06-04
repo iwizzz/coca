@@ -1,0 +1,7 @@
+{
+    "html": {
+      "snippets": {
+        "pictures": "picture>source[type='image/avif' srcset='../dist/images/.avif']+source[type='image/webp' srcset='../dist/images/.webp']+img[src=../dist/images/.png]"
+      }
+    }
+  }
