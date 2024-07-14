@@ -3,11 +3,582 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <title>Main</title>
 </head>
 <body>
-    <!--=include ../components/header.html -->
-    
-    <a href="./html/about.html">fddsds</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <img src="./dist/images/Logo.svg" alt="">
+                <nav class="header__nav">
+                    <ul class="header__link-list">
+                        <li class="header__link-list-item"><a href="./index.html">Home</a></li>
+                        <li class="header__link-list-item"><a href="./html/about.html">About</a></li>
+                        <li class="header__link-list-item"><a href="./html/blog.html">Blog</a></li>
+                        <li class="header__link-list-item"><a href="./html/pricing.html">Pricing</a></li>
+                        <li class="header__link-list-item"><a href="./html/index.html" class="header__index-us-link">index Us</a></li>
+                    </ul>
+                    
+                    
+                </nav>
+                <img src="./dist/images/burger.svg " alt="" class="header__burger-button">
+            </div>
+        </header>
+        <main class="index__main">
+            <section class="index__major-block">
+                <div class="index__major-block__container">
+                    <div class="index__major-block__text-block">
+                        <h1>
+                            Digitally forward creative
+                        </h1>
+                        <p>When it comes to interactive marketing, we've got you covered.
+                            Be where the world is going</p>
+                        <form action="" class="index__major-block__form">
+                            <input type="email" name="" id="" placeholder="Enter your email">
+                            <input type="submit" name="" id="" value="Try for free">
+                        </form>
+                    </div>
+                    <div class="index__major-block__imgs-block">
+                        1
+                    </div>
+                </div>
+            </section>
+            <section class="index__advant-block">
+                <div class="index__advant-block__container">
+                    <div class="index__advant-block__head">
+                        <h2>Coca help our client solve complex customer problems with date that does more.</h2>
+                        <p>Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration</p>
+                    </div>
+                    <ul class="index__advant-block__list">
+                        <li class="index__advant-block__list-item">
+                            <div>
+                                <img src="./dist/images/calendar-icon.svg" alt="" class="index__advant-block__list__icon">
+                                <h4>Build your date fundamental</h4>
+                                <p>Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.</p>
+                            </div>
+                        </li>
+                        <li class="index__advant-block__list-item">
+                            <div>
+                                <img src="./dist/images/submit-on-list-icon.svg" alt="" class="index__advant-block__list__icon">
+                                <h4>Measure more effective</h4>
+                                <p>Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.</p>
+                            </div>
+                        </li>
+                        <li class="index__advant-block__list-item">
+                            <div class="">
+                                <img src="./dist/images/list-icon.svg" alt="" class="index__advant-block__list__icon">
+                                <h4>Activate your date</h4>
+                                <p>Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.</p>
+                            </div>
+                        </li>
+                        <li class="index__advant-block__list-item">
+                            <div class="">
+                                <img src="./dist/images/shield-icon.svg" alt="" class="index__advant-block__list__icon">
+                                <h4>Strengthen consumer privacy</h4>
+                                <p>Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="index__passion-block">
+                <div class="index__passion-block__container">
+                    <div class="index__passion-block__img-wrapper" style="background: url('./dist/images/passion-bg.jpg');">
+                        <picture>
+                           <source type='image/avif' srcset='./dist/images/passion-bars.avif'>
+                           <source type='image/webp' srcset='./dist/images/passion-bars.webp'>
+                           <img src='./dist/images/passion-bars.jpg' alt=''>
+                        </picture>
+                    </div>
+                    <div class="index__passion-block__body">
+                        <div class="index__passion-block__text-block">
+                            <h2>Passion to increase company revenue up to 85%</h2>
+                            <p>Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging</p>
+                        </div>
+                        <ul class="index__passion-block__list">
+                            <li class="index__passion-block__list-item">
+                                <p>Close more deals with single - page index managment</p>
+                            </li>
+                            <li class="index__passion-block__list-item">
+                                <p>Enjoy one-click calling, call scripts and voicemail automation</p>
+                            </li>
+                            <li class="index__passion-block__list-item">
+                                <p>Take stages and milestones of your deals to keep the sales process an track</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="index__statistics-block">
+                <div class="index__statistics-block__container">
+                    <ul class="index__statistics-block__list">
+                        <li class="index__statistics-block__list-item">
+                            <span>17k</span>
+                            <p>Happy customers on worldwide</p>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <hr>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <span>15+ </span>
+                            <p>Hours of work experience</p>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <hr>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <span>50+ </span>
+                            <p>Creativity & passionate members</p>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <hr>
+                        </li>
+                        <li class="index__statistics-block__list-item">
+                            <span>100+ </span>
+                            <p>Integrations lorem ipsum integrations</p>
+                        </li>
+                    </ul>
+                    <div class="index__statistics-block__img-wrapper">
+                        <picture>
+                           <source type='image/avif' srcset='./dist/images/statistic-img.avif'>
+                           <source type='image/webp' srcset='./dist/images/statistic-img.webp'>
+                           <img src='./dist/images/statistic-img.jpg' alt=''>
+                        </picture>
+                    </div>
+                    <div class="index__statistics-block_text-block">
+                        <h2>Lift your business to new heights with our digital marketing services</h2>
+                        <p>To build software that gives customer facing teams in small and medium-sized businesses the ability to create rewarding and long-lasting relationships with customers</p>
+                    </div>
+                </div>
+            </section>
+            <section class="index__partners-block">
+                <div class="index__partners__container">
+                    <div class="index__partners__body-block">
+                        <h2>890+</h2>
+                        <p>Some big companies that we work with, and trust us very much</p>
+                    </div>
+                    <ul class="index__partners__list">
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/Airbnb Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/Airbnb Logo.webp'>
+                               <img src='./dist/images/Airbnb Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/Amazon Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/Amazon Logo.webp'>
+                               <img src='./dist/images/Amazon Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/FedEx Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/FedEx Logo.webp'>
+                               <img src='./dist/images/FedEx Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/Microsoft Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/Microsoft Logo.webp'>
+                               <img src='./dist/images/Microsoft Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/Google Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/Google Logo.webp'>
+                               <img src='./dist/images/Google Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/OLA logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/OLA logo.webp'>
+                               <img src='./dist/images/OLA logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/Walmart Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/Walmart Logo.webp'>
+                               <img src='./dist/images/Walmart Logo.png' alt=''>
+                            </picture>
+                        </li>
+                        <li class="index__partners__list-item">
+                            <picture>
+                               <source type='image/avif' srcset='./dist/images/OYO Logo.avif'>
+                               <source type='image/webp' srcset='./dist/images/OYO Logo.webp'>
+                               <img src='./dist/images/OYO Logo.png' alt=''>
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="index__advantages">
+                <div class="index__advantages__container">
+                    <div class="index__advantages__text-block">
+                        <h2>Advertise, analyze, and optimize! We do it all for you</h2>
+                        <p>Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster</p>
+                    </div>
+                    <ul class="index__advantages__list">
+                        <li class="index__advantages__list-item">
+                            <div class="index__advantages__list__img-wrapper" style="background-image: url('./dist/images/advantages-img-1.jpg');"><img src="./dist/images/face-icon.svg" alt=""></div>
+                            <div class="index__advantages__list__text-block">
+                                <h4>Lead happiness for customers</h4>
+                                <p>Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster</p>
+                            </div>
+                        </li>
+                        <li class="index__advantages__list-item">
+                                <div class="index__advantages__list__img-wrapper" style="background-image: url('./dist/images/advantages-img-2.jpg');"><img src="./dist/images/arrow-to-up-icon.svg" alt=""></div>
+
+                            <div class="index__advantages__list__text-block">
+                                <h4>Mutually support each other</h4>
+                                <p>Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster</p>
+                            </div>
+                        </li>
+                        <li class="index__advantages__list-item">
+                            <div class="index__advantages__list__img-wrapper" style="background-image: url('./dist/images/advantages-img-3.jpg');"><img src="./dist/images/people-icon.svg" alt=""></div>
+
+
+                            <div class="index__advantages__list__text-block">
+                                <h4>Have fun growing together</h4>
+                                <p>Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster</p>
+                            </div>
+                        </li>
+                        <li class="index__advantages__list-item">
+                            <div class="index__advantages__list__img-wrapper" style="background-image: url('./dist/images/advantages-img-4.jpg');"><img src="./dist/images/graph-icon.svg" alt=""></div>
+
+
+                            <div class="index__advantages__list__text-block">
+                                <h4>Make Your Business Grow</h4>
+                                <p>Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="index__news">
+                <div class="index__news__container">
+                    <div class="index__news__text-block">
+                        <h2>Trending news from Coca</h2>
+                        <p>we have some new Service to pamper you</p>
+                    </div>
+                    <div class="index__news__swiper swiper">
+                        <ul class="index__news__list swiper-wrapper">
+                            <li class="index__news__list-item swiper-slide">
+                                <a href="">
+                                    <picture>
+                                        <source type='image/avif' srcset='./dist/images/idnex-news-pic.avif'>
+                                        <source type='image/webp' srcset='./dist/images/idnex-news-pic.webp'>
+                                        <img src='./dist/images/idnex-news-pic.jpg' alt=''>
+                                     </picture>
+                                     <div class="index__news__list__text">
+                                         <p>Published in Insight Jan 30, 2021</p>
+                                         <p>by : Albert Sans</p>
+                                     </div>
+                                     <h4>What makes an authentic employee profile, and why does it matter ?</h4>
+                                </a>
+                            </li>  
+                            <li class="index__news__list-item swiper-slide">
+                                <a href="">
+                                    <picture>
+                                        <source type='image/avif' srcset='./dist/images/idnex-news-pic.avif'>
+                                        <source type='image/webp' srcset='./dist/images/idnex-news-pic.webp'>
+                                        <img src='./dist/images/idnex-news-pic.jpg' alt=''>
+                                     </picture>
+                                     <div class="index__news__list__text">
+                                         <p>Published in Insight Jan 30, 2021</p>
+                                         <p>by : Albert Sans</p>
+                                     </div>
+                                     <h4>What makes an authentic employee profile, and why does it matter ?</h4>
+                                </a>
+                            </li>   
+                            <li class="index__news__list-item swiper-slide">
+                                <a href="">
+                                    <picture>
+                                        <source type='image/avif' srcset='./dist/images/idnex-news-pic.avif'>
+                                        <source type='image/webp' srcset='./dist/images/idnex-news-pic.webp'>
+                                        <img src='./dist/images/idnex-news-pic.jpg' alt=''>
+                                     </picture>
+                                     <div class="index__news__list__text">
+                                         <p>Published in Insight Jan 30, 2021</p>
+                                         <p>by : Albert Sans</p>
+                                     </div>
+                                     <h4>What makes an authentic employee profile, and why does it matter ?</h4>
+                                </a>
+                            </li> 
+                            <li class="index__news__list-item swiper-slide">
+                                <a href="">
+                                    <picture>
+                                        <source type='image/avif' srcset='./dist/images/idnex-news-pic.avif'>
+                                        <source type='image/webp' srcset='./dist/images/idnex-news-pic.webp'>
+                                        <img src='./dist/images/idnex-news-pic.jpg' alt=''>
+                                     </picture>
+                                     <div class="index__news__list__text">
+                                         <p>Published in Insight Jan 30, 2021</p>
+                                         <p>by : Albert Sans</p>
+                                     </div>
+                                     <h4>What makes an authentic employee profile, and why does it matter ?</h4>
+                                </a>
+                            </li> 
+                            <li class="index__news__list-item swiper-slide">
+                                <a href="">
+                                    <picture>
+                                        <source type='image/avif' srcset='./dist/images/idnex-news-pic.avif'>
+                                        <source type='image/webp' srcset='./dist/images/idnex-news-pic.webp'>
+                                        <img src='./dist/images/idnex-news-pic.jpg' alt=''>
+                                     </picture>
+                                     <div class="index__news__list__text">
+                                         <p>Published in Insight Jan 30, 2021</p>
+                                         <p>by : Albert Sans</p>
+                                     </div>
+                                     <h4>What makes an authentic employee profile, and why does it matter ?</h4>
+                                </a>
+                            </li>   
+                        </ul>
+
+                    </div>
+
+                    
+                </div>
+            </section>
+            <section class="index__comments">
+                <div class="index__comments__container">
+                    <div class="index__comments__text-block">
+                        <h3>What our customer are saying</h3>
+                        <p>We are trusted numerous companies from different business to meet their needs</p>
+                    </div>
+                    <div class="index__comments__slider-wrapper">
+                        <div class="index__comments__swiper-wrapper swiper">
+                            <ul class="index__comments__list swiper-wrapper" >
+                                <li class="index__comments__list-item swiper-slide">
+                                    <div class="index__comments__score-block">
+                                        <div class="index__comments__score-block__stars">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                      
+                                        </div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <blockquote class="index__comments__quote">
+                                        “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
+                                    </blockquote>
+                                    <div class="index__comments__comment-author">
+                                        <div class="index__comments__comment-author__img-wrapper">
+                                            <picture>
+                                               <source type='image/avif' srcset='./dist/images/index-comments-author.avif'>
+                                               <source type='image/webp' srcset='./dist/images/index-comments-author.webp'>
+                                               <img src='./dist/images/index-comments-author.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="index__comments__comment-author__text-block">
+                                            <p>Renee Wells</p>
+                                            <p>Product Designer, Quotient</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="index__comments__list-item swiper-slide">
+                                    <div class="index__comments__score-block">
+                                        <div class="index__comments__score-block__stars">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                      
+                                        </div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <blockquote class="index__comments__quote">
+                                        “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
+                                    </blockquote>
+                                    <div class="index__comments__comment-author">
+                                        <div class="index__comments__comment-author__img-wrapper">
+                                            <picture>
+                                               <source type='image/avif' srcset='./dist/images/index-comments-author.avif'>
+                                               <source type='image/webp' srcset='./dist/images/index-comments-author.webp'>
+                                               <img src='./dist/images/index-comments-author.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="index__comments__comment-author__text-block">
+                                            <p>Renee Wells</p>
+                                            <p>Product Designer, Quotient</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="index__comments__list-item swiper-slide">
+                                    <div class="index__comments__score-block">
+                                        <div class="index__comments__score-block__stars">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                      
+                                        </div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <blockquote class="index__comments__quote">
+                                        “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
+                                    </blockquote>
+                                    <div class="index__comments__comment-author">
+                                        <div class="index__comments__comment-author__img-wrapper">
+                                            <picture>
+                                               <source type='image/avif' srcset='./dist/images/index-comments-author.avif'>
+                                               <source type='image/webp' srcset='./dist/images/index-comments-author.webp'>
+                                               <img src='./dist/images/index-comments-author.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="index__comments__comment-author__text-block">
+                                            <p>Renee Wells</p>
+                                            <p>Product Designer, Quotient</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="index__comments__list-item swiper-slide">
+                                    <div class="index__comments__score-block">
+                                        <div class="index__comments__score-block__stars">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                            <img src="./dist/images/star.svg" alt="">
+                                      
+                                        </div>
+                                        <p>5.0</p>
+                                    </div>
+                                    <blockquote class="index__comments__quote">
+                                        “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
+                                    </blockquote>
+                                    <div class="index__comments__comment-author">
+                                        <div class="index__comments__comment-author__img-wrapper">
+                                            <picture>
+                                               <source type='image/avif' srcset='./dist/images/index-comments-author.avif'>
+                                               <source type='image/webp' srcset='./dist/images/index-comments-author.webp'>
+                                               <img src='./dist/images/index-comments-author.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="index__comments__comment-author__text-block">
+                                            <p>Renee Wells</p>
+                                            <p>Product Designer, Quotient</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="index__comments__buttons">
+                            <div class="index__comments__prev-button">
+                                <img src="./dist/images/arrow.svg" alt="">
+                            </div>
+                            <div class="index__comments__next-button">
+                                <img src="./dist/images/arrow.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    <script>
+                      
+                        const swiper = new Swiper(".index__news__swiper", {
+                            slidesPerView: 2,
+                            
+                        });
+
+                        const commnetSwiper = new Swiper(".index__comments__swiper-wrapper", {
+                            navigation: {
+                                nextEl: '.index__comments__next-button',
+                                prevEl: '.index__comments__prev-button',
+                            },
+                            
+                        });
+                      </script>
+        </main>
+        <footer class="footer footer-white">
+            <div class="footer__container">
+                <div class="footer__head-block">
+                    <div class="footer__head-block__body">
+                        <h2 class="footer__head__title">Think beyond the wave</h2>
+                        <p class="footer__head__text">Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help</p>
+                    </div>
+                    <a href="#" class="footer__head__button">Try for free</a>
+                </div>
+                <div class="footer__body-block">
+                    <div class="footer__body-block__logo-and-text">
+                        <a href="./index.html" class="footer__body-block-logo-wrapper"><img src="./dist/images/Logo.svg"></img></a>
+                        <p class="footer__body-block__text">We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs</p>
+                    </div>
+                    <ul class="footer__body-block__section-list">
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Company</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">About</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Pricing</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Jobs</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Product</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Sales Software</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Marketplace</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Terms & Conditions</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Discover</h5>
+                            <ul class="footer__body-block__section-list__links-list">
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">CRM Comparision</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Partner Program</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">What is CRM</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Resource</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__body-block__section-list-item">
+                            <h5>Help Center</h5>
+                            <ul class="footer__body-block__section-list__links-list"> 
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Community</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Knowledge Base</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Academy</a></li>
+                                <li class="footer__body-block__section-list__links-list-item"><a href="#">Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__last-block">
+                    <div class="footer__lists-wrapper"> 
+                        <ul class="footer__last-block__social-list">
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="./dist/images/facebook-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="./dist/images/twiter-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="./dist/images/instagram-icon.svg" alt=""></a></li>
+                            <li class="footer__last-block__social-list-item"><a href="#"><img src="./dist/images/linkedin-icon.svg" alt=""></a></li>
+                        </ul>
+                        <ul class="footer__last-block__links-list">
+                            <li class="footer__last-block__links-list-item"><a href="#">Privacy Policy</a></li>
+                            <li class="footer__last-block__links-list-item"><a href="#">Terms & Conditions</a></li>
+                            <li class="footer__last-block__links-list-item"><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <p>© Copyright 2023,t All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
